@@ -2,12 +2,13 @@ Summary:	XML DocBook DTD 5.1
 Summary(pl.UTF-8):	XML DocBook DTD 5.1
 Name:		docbook-dtd51-xml
 Version:	5.1
-Release:	1
+Release:	2
 License:	Free
 Group:		Applications/Publishing/XML
-Source0:	http://docbook.org/xml/%{version}/docbook-v%{version}-os.zip
+Source0:	https://docbook.org/xml/%{version}/docbook-v%{version}-os.zip
 # Source0-md5:	d8bea8ddfc5743578a31cb18f9ae1f5a
-URL:		http://docbook.org/
+Patch0:		%{name}-catalog.patch
+URL:		https://docbook.org/
 BuildRequires:	libxml2-progs
 BuildRequires:	rpm-build >= 4.0.2-94
 BuildRequires:	unzip
@@ -40,6 +41,8 @@ Ten pakiet zawiera wersję DocBook 5.1 XML.
 
 # update version number in catalog
 %{__sed} -i -e 's/5\.1CR4/5.1/' schemas/catalog.xml
+
+%patch0 -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT

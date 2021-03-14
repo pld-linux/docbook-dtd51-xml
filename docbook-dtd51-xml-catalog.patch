@@ -1,0 +1,19 @@
+Required for daps to detect DocBook 5.1 XML
+--- docbook-dtd51-xml-5.1/schemas/catalog.xml.orig	2021-03-14 20:49:12.976244921 +0100
++++ docbook-dtd51-xml-5.1/schemas/catalog.xml	2021-03-14 21:05:32.967602519 +0100
+@@ -29,6 +29,15 @@
+ <!-- This is the source format for the catalog; replace 5.1 with the appropriate
+      versions before publishing it! -->
+ 
++<system systemId="http://docbook.org/xml/5.1/rng/assembly.rnc" uri="rng/assembly.rnc"/>
++<system systemId="http://docbook.org/xml/5.1/rng/assembly.rng" uri="rng/assembly.rng"/>
++<system systemId="http://docbook.org/xml/5.1/rng/dbits.rnc" uri="rng/dbits.rnc"/>
++<system systemId="http://docbook.org/xml/5.1/rng/dbits.rng" uri="rng/dbits.rng"/>
++<system systemId="http://docbook.org/xml/5.1/rng/docbook.rnc" uri="rng/docbook.rnc"/>
++<system systemId="http://docbook.org/xml/5.1/rng/docbook.rng" uri="rng/docbook.rng"/>
++<system systemId="http://docbook.org/xml/5.1/rng/docbookxi.rnc" uri="rng/docbookxi.rnc"/>
++<system systemId="http://docbook.org/xml/5.1/rng/docbookxi.rng" uri="rng/docbookxi.rng"/>
++
+ <uri name="http://www.oasis-open.org/docbook/xml/5.1/docbook.nvdl" uri="docbook.nvdl"/>
+ <uri name="http://www.oasis-open.org/docbook/xml/5.1/rng/assembly.rnc" uri="rng/assembly.rnc"/>
+ <uri name="http://www.oasis-open.org/docbook/xml/5.1/rng/assembly.rng" uri="rng/assembly.rng"/>
