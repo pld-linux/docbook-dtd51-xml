@@ -42,7 +42,7 @@ Ten pakiet zawiera wersję DocBook 5.1 XML.
 # update version number in catalog
 %{__sed} -i -e 's/5\.1CR4/5.1/' schemas/catalog.xml
 
-%patch0 -p1
+%patch -P0 -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT
